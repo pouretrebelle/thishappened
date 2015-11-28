@@ -1,0 +1,316 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: Relevant WordPress Theme\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Mighty Themes\n"
+"MIME-Version: 1.0\n"
+"Language: en_US\n"
+"X-Generator: Poedit 1.6.2\n"
+
+#. Text in echo
+#: relevant/content-quote.php:73 relevant/content-video.php:55
+#: relevant/content.php:23 relevant/content-audio.php:41
+#: relevant/content-gallery.php:21 relevant/content-link.php:41
+msgid " by "
+msgstr ""
+
+#. Text in echo
+#: relevant/content-quote.php:75 relevant/content-video.php:57
+#: relevant/content.php:25 relevant/content-audio.php:43
+#: relevant/template-homepage.php:120 relevant/content-gallery.php:23
+#: relevant/content-link.php:43
+msgid " with "
+msgstr ""
+
+#. Text in function
+#: relevant/content-quote.php:76 relevant/comments.php:12
+#: relevant/content-video.php:58 relevant/content.php:26
+#: relevant/content-audio.php:44 relevant/template-homepage.php:121
+#: relevant/content-gallery.php:24 relevant/content-link.php:44
+msgid "% Comments"
+msgstr ""
+
+#. Text in function
+#: relevant/content-quote.php:76 relevant/comments.php:12
+#: relevant/content-video.php:58 relevant/content.php:26
+#: relevant/content-audio.php:44 relevant/template-homepage.php:121
+#: relevant/content-gallery.php:24 relevant/content-link.php:44
+msgid "0 Comments"
+msgstr ""
+
+#. Text in function
+#: relevant/content-quote.php:76 relevant/comments.php:12
+#: relevant/content-video.php:58 relevant/content.php:26
+#: relevant/content-audio.php:44 relevant/template-homepage.php:121
+#: relevant/content-gallery.php:24 relevant/content-link.php:44
+msgid "1 Comment"
+msgstr ""
+
+#. Text in echo
+#: relevant/searchform.php:4
+msgid "<i class=\"fa fa-search\"></i>"
+msgstr ""
+
+#. Text in echo
+#: relevant/footer.php:43
+msgid "All rights reserved"
+msgstr ""
+
+#. Text in echo
+#: relevant/archive.php:11
+msgid "Archives"
+msgstr ""
+
+#. Text in echo
+#: relevant/single.php:23
+msgid "Author"
+msgstr ""
+
+#. Text in function
+#: relevant/functions.php:1
+msgid "Blog Sidebar"
+msgstr ""
+
+#. Text in echo
+#: relevant/template-homepage.php:16
+msgid "Browser Bar"
+msgstr ""
+
+#. Text in function
+#: relevant/comments.php:39
+msgid "Cancel reply"
+msgstr ""
+
+#. Text in function
+#: relevant/archive.php:11
+msgid "Category: %s"
+msgstr ""
+
+#. Text in echo
+#: relevant/single-portfolio.php:92 relevant/single-portfolio.php:94
+msgid "Client"
+msgstr ""
+
+#. Text in echo
+#: relevant/comments.php:16 relevant/comments.php:31
+msgid "Comments are closed."
+msgstr ""
+
+#. Text in function
+#: relevant/functions.php:1
+msgid "Contact Page Sidebar"
+msgstr ""
+
+#. Text in function
+#: relevant/functions.php:242
+msgid "Continue Reading"
+msgstr ""
+
+#. Text in echo
+#: relevant/footer.php:43
+msgid "Copyright"
+msgstr ""
+
+#. Text in echo
+#: relevant/single-portfolio.php:87
+msgid "Date"
+msgstr ""
+
+#. Text in function
+#: relevant/functions.php:229
+msgid "Edit"
+msgstr ""
+
+#. Text in echo
+#: relevant/template-contact.php:67
+msgid "Email"
+msgstr ""
+
+#. Text in function
+#: relevant/functions.php:1
+msgid "Footer Menu"
+msgstr ""
+
+#. Text in function
+#: relevant/functions.php:1
+msgid "Header Menu"
+msgstr ""
+
+#. Text in echo
+#: relevant/template-homepage.php:51 relevant/template-homepage.php:65
+#: relevant/template-homepage.php:79
+msgid "Icon"
+msgstr ""
+
+#. Text in function
+#: relevant/comments.php:39
+msgid "Leave a reply"
+msgstr ""
+
+#. Text in function
+#: relevant/comments.php:39
+msgid "Leave a reply to %s"
+msgstr ""
+
+#. Text in function
+#: relevant/comments.php:39
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out</a>"
+msgstr ""
+
+#. Text in echo
+#: relevant/template-contact.php:71
+msgid "Message"
+msgstr ""
+
+#. Text in echo
+#: relevant/template-contact.php:63
+msgid "Name"
+msgstr ""
+
+#. Text in function
+#: relevant/archive.php:75 relevant/search.php:39 relevant/index.php:35
+msgid "Newer Posts"
+msgstr ""
+
+#. Text in function
+#: relevant/template-portfolio.php:79
+msgid "Newer Work"
+msgstr ""
+
+#. Text in function
+#: relevant/archive.php:74 relevant/search.php:38 relevant/index.php:34
+msgid "Older Posts"
+msgstr ""
+
+#. Text in function
+#: relevant/template-portfolio.php:78
+msgid "Older Work"
+msgstr ""
+
+#. Text in echo
+#: relevant/404.php:13
+msgid "Page Not Found"
+msgstr ""
+
+#. Text in function
+#: relevant/functions.php:1
+msgid "Pages Sidebar"
+msgstr ""
+
+#. Text in echo
+#: relevant/template-contact.php:48
+msgid "Please complete the form"
+msgstr ""
+
+#. Text in echo
+#: relevant/template-contact.php:48
+msgid "Please enter a valid email address"
+msgstr ""
+
+#. Text in echo
+#: relevant/content-quote.php:93 relevant/content-video.php:73
+#: relevant/content.php:41 relevant/content-audio.php:59
+#: relevant/content-gallery.php:39 relevant/content-link.php:59
+msgid "Posted in"
+msgstr ""
+
+#. Text in echo
+#: relevant/header.php:18 relevant/header.php:20
+msgid "RSS Feed"
+msgstr ""
+
+#. Text in echo
+#: relevant/footer.php:36
+msgid "Relevant"
+msgstr ""
+
+#. Text in echo
+#: relevant/search.php:10
+msgid "Search results for"
+msgstr ""
+
+#. Text in echo
+#: relevant/single-portfolio.php:99
+msgid "Skills"
+msgstr ""
+
+#. Text in echo
+#: relevant/single.php:44
+msgid "Sorry, nothing to display"
+msgstr ""
+
+#. Text in echo
+#: relevant/template-contact.php:75
+msgid "Submit"
+msgstr ""
+
+#. Text in function
+#: relevant/comments.php:39
+msgid "Submit Comment"
+msgstr ""
+
+#. Text in echo
+#: relevant/content-quote.php:95 relevant/content-video.php:75
+#: relevant/content.php:44 relevant/content-audio.php:61
+#: relevant/content-gallery.php:41 relevant/content-link.php:61
+msgid "Tagged with"
+msgstr ""
+
+#. Text in echo
+#: relevant/template-contact.php:48
+msgid "There was a problem processing your request"
+msgstr ""
+
+#. Text in echo
+#: relevant/searchform.php:3
+msgid "To search, type and hit enter."
+msgstr ""
+
+#. Text in echo
+#: relevant/template-portfolio.php:43 relevant/loop-portfolio.php:26
+msgid "View"
+msgstr ""
+
+#. Text in echo
+#: relevant/template-homepage.php:25
+msgid "View project"
+msgstr ""
+
+#. Text in echo
+#: relevant/404.php:17
+msgid ""
+"Well, this is embarrassing. We can\\'t seem to locate the page you\\'re "
+"looking for. <br>Bad link? Mistyped address? We\\'re not exactly sure. "
+"<br><br>You can always search for the page below."
+msgstr ""
+
+#. Text in echo
+#: relevant/footer.php:36
+msgid "WordPress Theme by"
+msgstr ""
+
+#. Text in echo
+#: relevant/template-contact.php:35
+msgid "You message has been sent"
+msgstr ""
+
+#. Text in function
+#: relevant/comments.php:39
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#. Text in echo
+#: relevant/functions.php:236
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. Text in echo
+#: relevant/search.php:47
+msgid "Your search did not match any entries"
+msgstr ""
