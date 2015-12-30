@@ -18,17 +18,18 @@
 			
 					$content = $post->post_content;
 					
-					//echo($content);
-					
-					//http://vimeo.com/74209516
+					// http://vimeo.com/74209516 OR https
 					
 					$posvideo = strpos($content, "http://vimeo.com/");
-					
+
+					$regex = '/https?:\/\/vimeo\.com\//';
+					preg_match($regex, $content, $matches, PREG_OFFSET_CAPTURE);
+					$posvideo = $matches[1];
 					
 					if ($posvideo === false) {
 					
 					
-					}else{
+					} else {
 					
 						$posbreak = strpos($content, "\n");
 						
