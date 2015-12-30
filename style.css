@@ -82,91 +82,67 @@ Version: 1.0
 /* TALKS Archive */
 
 body.category-talks .post {
-	width: 295px;
-	margin-right: 30px;
-	margin-bottom: 10px !important;
+	width: 100%;
+	margin-bottom: 30px!important;
 	float: left;
 	text-align: left;
+}
+@media (min-width: 600px) and (max-width: 899px) {
+	body.category-talks .post {
+		width: 45%;
+		margin-right: 10%;
 	}
-
-body.category-talks #content h2.entry-title {
-	font-size: 12px;
-	border-bottom:1px solid #333;
-    line-height: 14px;
+	body.category-talks .post:nth-child(2n) {
+		margin-right: 0;
 	}
-
-body.category-talks .last {
-	margin-right: 0;
+}
+@media (min-width: 900px) {
+	body.category-talks .post {
+		width: 30%;
+		margin-right: 5%;
 	}
-
-body.category-talks .item {
-	margin-bottom: 0px;
+	body.category-talks .post:nth-child(3n) {
+		margin-right: 0;
 	}
+}
 
-body.category-talks .item a,
-body.single-talks .item a {
-	/*height: 295px;*/
+body.category-talks .talk-thumb {
 	width: 100%;
+	height: 0;
+	padding-top: 66%;
+	background-size: cover;
 	position: relative;
-	display: block;
-	z-index: 100;
-	}
-
-body.category-talks .item img,
-body.single-talks .item img {
-	z-index: 101;
-	width:295px;
-	height:197px;
-	}
-
-body.category-talks .item a .overlay,
-body.single-talks .item a .overlay {
-	height: 295px;
-	width: 295px;
+}
+body.category-talks .talk-thumb:before {
+	content: 'Watch';
+	background-color: rgba(59, 191, 239, 0.66);
+	color: #fff;
+	text-align: center;
+	line-height: 0;
 	position: absolute;
+	width: 100%;
+	height: 0;
+	padding: 33% 0;
 	top: 0;
-	display: block;
-	background: #3BBFEF;
+	left: 0;
+	z-index: 1;
+	transition: opacity 0.3s ease;
 	opacity: 0;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease;
-	z-index: 102;
-	}
-
-body.category-talks .item a:hover .overlay,
-body.single-talks .item a:hover .overlay {
-	background: #3BBFEF;
-	opacity: 0.6;
-	}
-
-body.category-talks .item .view,
-body.single-talks .item .view {
-	background: #000;
-	color: #FFF;
-	border-radius: 4px;
-	padding: 5px 15px;
-	display: block;
-	position: absolute;
-	top: 46%;
-	left: 40%;
-	opacity: 0;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease;
-	z-index: 103;
-	}
-
-body.category-talks .item a:hover .view,
-body.single-talks .item a:hover .view {
+}
+body.category-talks .talk-thumb:hover:before {
 	opacity: 1;
-	}
+}
 
-body.category-talks #content .entry-header {
-	margin-bottom: 7px;
-	}
+body.category-talks .talk-title {
+	margin-top: 0.5em;
+	font-size: 14px;
+	font-weight: 400;
+	max-height: 4.3em;
+	overflow: hidden;
+}
+body.category-talks .talk-title a {
+	color: #000;
+}
 
 
 /* Portfolio Single */
@@ -176,11 +152,6 @@ body.single-talks #content article {
 	}
 body.author #content article {
 	clear:both;
-	}
-	
-body.category-talks #content article {
-	height:300px;
-	float:left
 	}
 
 body.single-talks .flexslider { 

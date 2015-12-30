@@ -34,34 +34,31 @@
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 				<!-- Article -->
-				<article class="post<?php //if( $count %3 == 0 ) { echo ' last'; }; ?>" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-					<header class="entry-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
-							<div class="item">
-							  <?php if ( has_post_thumbnail() ) : ?>
-								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-									<?php the_post_thumbnail( 'm' ); ?>
-									<div class="overlay"></div>
-									<span class="view"><?php _e( 'Watch', 'mighty' ); ?></span>
-								</a>
-							</div>
-					  <?php endif; ?>
-						<h2 class="entry-title" itemprop="headline">
-							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?>
+				<article class="post" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+					<?php
+						$thumb_id = get_post_thumbnail_id();
+						$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'm', true);
+						$thumb_url = $thumb_url_array[0];
+					?>
+
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+						<div class="talk-thumb" style="background-image: url('<?php echo $thumb_url; ?>');"></div>
+					</a>
+
+					<h2 class="talk-title" itemprop="headline">
+						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?>
 						<?php the_excerpt(); ?></a>
-						  <a href="../city/<?php the_author_meta('user_nicename'); ?>"/><?php the_author_meta('display_name'); ?></a> / <?php the_date( "F Y" ); ?>
-						</h2>
 
-					</header>
+						<?php $event = get_field('event'); ?>
 
-					
+						<?php if ($event) : ?>
+							<a href="<?php echo get_permalink($event); ?>"><?php echo get_the_title($event); ?></a> / <?php echo get_the_date('F Y', $event->ID); ?>
+						<?php else : ?>
+						 	<a href="../city/<?php the_author_meta('user_nicename'); ?>"/><?php the_author_meta('display_name'); ?></a> / <?php the_date( "F Y" ); ?>
+						<?php endif; ?>
+					</h2>
 
 				</article>
-
-				<?php if( $count %3 == 0 ) : ?>
-					<!--<div class="clearfix"></div> //-->
-				<?php endif; ?>
-
-				<?php $count ++; ?>
 
 		<?php endwhile; ?>
 
