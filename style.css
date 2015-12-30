@@ -81,32 +81,32 @@ Version: 1.0
 	
 /* TALKS Archive */
 
-body.category-talks .post {
+.category-talks .post {
 	width: 100%;
 	margin-bottom: 30px!important;
 	float: left;
 	text-align: left;
 }
 @media (min-width: 600px) and (max-width: 899px) {
-	body.category-talks .post {
+	.category-talks .post {
 		width: 45%;
 		margin-right: 10%;
 	}
-	body.category-talks .post:nth-child(2n) {
+	.category-talks .post:nth-child(2n) {
 		margin-right: 0;
 	}
 }
 @media (min-width: 900px) {
-	body.category-talks .post {
+	.category-talks .post {
 		width: 30%;
 		margin-right: 5%;
 	}
-	body.category-talks .post:nth-child(3n) {
+	.category-talks .post:nth-child(3n) {
 		margin-right: 0;
 	}
 }
 
-body.category-talks .talk-thumb {
+.category-talks .talk-thumb {
 	width: 100%;
 	height: 0;
 	padding-top: 66%;
@@ -114,7 +114,7 @@ body.category-talks .talk-thumb {
 	background-color: #ccc;
 	position: relative;
 }
-body.category-talks .talk-thumb:before {
+.category-talks .talk-thumb:before {
 	content: 'Watch';
 	background-color: rgba(59, 191, 239, 0.66);
 	color: #fff;
@@ -130,18 +130,18 @@ body.category-talks .talk-thumb:before {
 	transition: opacity 0.3s ease;
 	opacity: 0;
 }
-body.category-talks .talk-thumb:hover:before {
+.category-talks .talk-thumb:hover:before {
 	opacity: 1;
 }
 
-body.category-talks .talk-title {
+.category-talks .talk-title {
 	margin-top: 0.5em;
 	font-size: 14px;
 	font-weight: 400;
 	max-height: 4.3em;
 	overflow: hidden;
 }
-body.category-talks .talk-title a {
+.category-talks .talk-title a {
 	color: #000;
 }
 
@@ -175,7 +175,6 @@ body.single-talks .entry-image {
 body.single-talks .whiteboard {
 	background: #FFFFFF;
 	padding: 55px 40px 40px 40px;
-	border-bottom: 3px solid #E9E9E9;
 	}
 
 body.single-talks .portfolio-meta {

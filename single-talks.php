@@ -78,9 +78,50 @@
 
 				</article>
 
-				<?php 
-				//get_template_part( 'loop', 'portfolio' );
-				?>
+
+			<?php if ($event) :
+
+				$curID = $post->ID;
+				$talks = get_field('talks', $event->ID);
+
+				if (count($talks) > 1) :
+
+					?>
+
+					<h3 style="margin-top: 2em;">More talks from this event</h3>
+
+					<ul class="category-talks clearfix">
+					<?php foreach ($talks as $post) : ?>
+
+						<?php if ($post->ID !== $curID) : ?>
+						<?php setup_postdata($post); ?>
+
+
+						<!-- Article -->
+						<article class="post" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+							<?php
+								$thumb_id = get_post_thumbnail_id();
+								$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'm', true);
+								$thumb_url = $thumb_url_array[0];
+							?>
+
+							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+								<div class="talk-thumb" style="background-image: url('<?php echo $thumb_url; ?>');"></div>
+							</a>
+
+							<h2 class="talk-title" itemprop="headline">
+								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?>
+								<?php the_excerpt(); ?></a>
+							</h2>
+
+						</article>
+
+					<?php endif; endforeach; ?>
+					</ul>
+					<?php wp_reset_postdata(); ?>
+				<?php endif; ?>
+			<?php endif; ?>
+				
 
 			<?php endwhile; endif; ?>
 		
