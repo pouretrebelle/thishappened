@@ -249,5 +249,27 @@ h1,h2{ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;}
 	color: #000;
 }
 
+.category-events .post {
+	margin-bottom: 30px!important;
+}
+.category-events .entry-thumb, .category-events .entry-thumb img {
+	width: 100%;
+	height: auto;
+}
+.category-events .entry-date {
+	font-weight: 300;
+	font-size: 0.9em;
+}
+@media (min-width: 600px) {
+	.category-events .entry-thumb {
+		width: 300px;
+		float: left;
+	}
+	.category-events .entry-wrap {
+		width: 100%;
+		width: calc(100% - 350px);
+		float: right;
+	}
+}
 
 
