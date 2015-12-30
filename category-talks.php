@@ -40,7 +40,7 @@
 						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?>
 						<?php the_excerpt(); ?></a>
 
-						<?php $event = get_field('event'); ?>
+						<?php $event = get_field('event')[0]; ?>
 
 						<?php if ($event) : ?>
 							<a href="<?php echo get_permalink($event); ?>"><?php echo get_the_title($event); ?></a> / <?php echo get_the_date('F Y', $event->ID); ?>

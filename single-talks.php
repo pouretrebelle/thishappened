@@ -11,7 +11,7 @@
 				<!-- Article -->
 				<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
 					
-					<?php $event = get_field('event'); ?>
+					<?php $event = get_field('event')[0]; ?>
 
 					<?php if ($event) : ?>
 
