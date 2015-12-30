@@ -111,6 +111,7 @@ body.category-talks .talk-thumb {
 	height: 0;
 	padding-top: 66%;
 	background-size: cover;
+	background-color: #ccc;
 	position: relative;
 }
 body.category-talks .talk-thumb:before {

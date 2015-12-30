@@ -6,32 +6,23 @@
 
 		<main id="content" class="full-width" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 
-			<div class="clearfix">
+		<?php 
 
-			<?php
-			/*
-				if ( get_query_var('paged') ) {
-					$paged = get_query_var('paged');
-				} else if ( get_query_var('page') ) {
-					$paged = get_query_var('page');
-				} else {
-					$paged = 1;
-				}
+			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+			$args = array(
+				'posts_per_page' => 12,
+				'paged'          => $paged,
+				'category_name'  => 'talks',
+			);
 
-				$args = array( 'post_type' => 'portfolio', 'posts_per_page' => 9, 'paged' => $paged );
+			query_posts($args);
+		?>
 
-				$temp = $wp_query;
-				$wp_query = null;
-				$wp_query = new WP_Query();
-				$wp_query->query( $args );
+		<?php if (have_posts()) : ?>
 
-				$count = 1;
-				*/
-			?>
+		<div class="clearfix">
 
-		
-
-		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+		<?php while (have_posts()) : the_post(); ?>
 
 				<!-- Article -->
 				<article class="post" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
@@ -63,6 +54,10 @@
 		<?php endwhile; ?>
 
 		</div>
+
+
+		<div class="nav-next alignleft"><?php previous_posts_link( 'Newer talks' ); ?></div>
+		<div class="nav-previous alignright"><?php next_posts_link( 'Older talks' ); ?></div>
 
 		
 
