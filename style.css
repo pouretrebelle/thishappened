@@ -87,6 +87,13 @@ Version: 1.0
 	float: left;
 	text-align: left;
 }
+.city-talks .post {
+	width: 47%;
+	float: left;
+}
+.city-talks .post:nth-child(2n) {
+	margin-left: 6%;
+}
 @media (min-width: 600px) and (max-width: 899px) {
 	.category-talks .post {
 		width: 45%;
@@ -106,7 +113,7 @@ Version: 1.0
 	}
 }
 
-.category-talks .talk-thumb {
+.category-talks .talk-thumb, .city-talks .talk-thumb {
 	width: 100%;
 	height: 0;
 	padding-top: 66%;
@@ -114,7 +121,7 @@ Version: 1.0
 	background-color: #ccc;
 	position: relative;
 }
-.category-talks .talk-thumb:before {
+.category-talks .talk-thumb:before, .city-talks .talk-thumb:before {
 	content: 'Watch';
 	background-color: rgba(59, 191, 239, 0.66);
 	color: #fff;
@@ -130,18 +137,27 @@ Version: 1.0
 	transition: opacity 0.3s ease;
 	opacity: 0;
 }
-.category-talks .talk-thumb:hover:before {
+.category-talks .talk-thumb:hover:before, .city-talks .talk-thumb:hover:before {
 	opacity: 1;
 }
 
+.city-talks .talk-title {
+	margin-top: 0.5em;
+	margin-bottom: 0;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1.2;
+	height: 3.6em;
+	overflow: hidden;
+}
 .category-talks .talk-title {
 	margin-top: 0.5em;
 	font-size: 14px;
 	font-weight: 400;
-	max-height: 4.3em;
+	height: 4.3em;
 	overflow: hidden;
 }
-.category-talks .talk-title a {
+.category-talks .talk-title a, .city-talks .talk-title a {
 	color: #000;
 }
 

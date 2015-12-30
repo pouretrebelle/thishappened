@@ -20,6 +20,9 @@
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
+				hello	
+				<?php var_dump($post); ?>
+
 				<!-- Article -->
 				<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
 
