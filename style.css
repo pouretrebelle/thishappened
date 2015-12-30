@@ -197,7 +197,7 @@ body.single-talks .flex-direction-nav a {
 	}
 
 body.single-talks .entry-image {
-	line-height: 0;
+	margin-top: 1em;
 	}
 
 body.single-talks .whiteboard {

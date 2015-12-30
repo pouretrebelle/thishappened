@@ -10,8 +10,21 @@
 				
 				<!-- Article -->
 				<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-				  <a href="../city/<?php the_author_meta('user_nicename'); ?>"/><?php the_author_meta('display_name'); ?></a> / <?php the_date( "j F Y" ); ?>
-				  <div class="entry-image clearfix">
+					
+					<?php $event = get_field('event'); ?>
+
+					<?php if ($event) : ?>
+
+						<a href="<?php echo get_permalink($event); ?>"><?php echo get_the_title($event); ?></a> happened on <?php echo get_the_date('j F Y', $event->ID); ?>
+
+					<?php else : ?>
+
+					  <a href="../city/<?php the_author_meta('user_nicename'); ?>"/><?php the_author_meta('display_name'); ?></a> / <?php the_date( "j F Y" ); ?>
+
+					<?php endif; ?>
+
+
+					<div class="entry-image clearfix">
 					
 					
 					<?php 
