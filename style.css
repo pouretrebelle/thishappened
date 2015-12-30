@@ -172,7 +172,7 @@ body.category-talks #content .entry-header {
 /* Portfolio Single */
 
 body.single-talks #content article {
-	margin-bottom: 70px;
+	margin-bottom: 0;
 	}
 body.author #content article {
 	clear:both;
@@ -249,3 +249,18 @@ body.single-talks .size-thumbnail{float:left;margin-right:20px;margin-bottom:20p
 
 #hero .wrap h2 a {font-family:atbramleylight;}
 h1,h2{ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+
+
+/* Event talks */
+.event-talk {
+	margin-bottom: 3em;
+}
+.event-talk iframe {
+	margin-bottom: 1em;
+}
+.author-name a {
+	color: #000;
+}
+
+
+

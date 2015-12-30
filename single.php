@@ -20,8 +20,7 @@
 
 				<!-- Author -->
 				<section class="author-bio clearfix" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
-					<h3><?php _e( 'Author', 'mighty' ) ?></h3>
-					<?php echo get_avatar( get_the_author_meta( 'email' ), '75', get_the_author() ); ?>
+					<hr>
 					<h1 class="author-name" itemprop="name">
 						<?php the_author_posts_link(); ?>
 					</h1>
