@@ -93,7 +93,10 @@
 																									
 						<h1><?php single_post_title(); ?></h1>
 						<?php $page_id = get_queried_object_id(); ?>
-						<h2><?php echo get_post_field( 'post_excerpt', $page_id, 'display' ); ?></h2>
+
+						<?php if (get_field('happened', $page_id)) : ?>
+							<h2>happened on <?php echo get_the_date('j F Y', $page_id); ?></h2>
+						<?php endif; ?>
 						
 					<?php elseif ( is_category() ): ?>
 																									

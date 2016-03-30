@@ -53,20 +53,12 @@
             $events = get_posts(array(
                 'author'         => $author,
                 'category_name'  => 'event',
-                'meta_query'     => array(
-                    'relation'      => 'AND',
-                    array(
-                        'key'       => 'happened',
-                        'value'     => true,
-                        'compare'   => '=='
-                    ),
-                ),
             ));
         ?>
 
         <?php if ($events) : ?>
 
-            <h4>Past Events</h4>
+            <h4>Events</h4>
 
             <?php foreach ($events as $event) : ?>
 
@@ -74,8 +66,16 @@
                 <p>
                 <a href="<?php echo get_permalink($id); ?>">
                     <?php echo get_the_title($id); ?>
-                </a>
-                / <?php echo get_the_date('F Y', $id) ?>
+                </a> / 
+
+                <?php
+                $field_date = get_field('date');
+                if ($field_date) :
+                    $date = DateTime::createFromFormat('Ymd', $field_date);
+                    echo $date->format('F Y');
+                else : ?>
+                    <?php echo get_the_date('F Y', $id) ?>
+                <? endif; ?>
                 </p>
 
             <?php endforeach; ?>
