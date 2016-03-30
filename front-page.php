@@ -15,7 +15,7 @@
 ,
 <a href="/city/hamburg">Hamburg</a>
 ,
-<a href="/city/hongkong">Hong Kong</a>
+<a href="/city/hong-kong">Hong Kong</a>
 ,
 <a href="/city/limerick">Limerick</a>
 ,

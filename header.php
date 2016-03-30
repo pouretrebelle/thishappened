@@ -89,7 +89,7 @@
 							<a href="<?php echo of_get_option( 'header-btn-link' ); ?>" title="<?php echo of_get_option( 'header-btn-text' ); ?>" class="btn"><?php echo of_get_option( 'header-btn-text' ); ?></a>
 						<?php endif; ?>
 
-					<?php elseif ( is_singular() || is_home() ) : ?>
+					<?php elseif ( is_singular() && !is_page(245) || is_home() ) : ?>
 																									
 						<h1><?php single_post_title(); ?></h1>
 						<?php $page_id = get_queried_object_id(); ?>
