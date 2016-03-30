@@ -95,7 +95,7 @@
 						<?php $page_id = get_queried_object_id(); ?>
 
 						<?php if (get_field('happened', $page_id)) : ?>
-							<h2>happened on <?php echo get_the_date('j F Y', $page_id); ?></h2>
+							<p>happened on <?php echo get_the_date('j F Y', $page_id); ?></p>
 						<?php endif; ?>
 						
 					<?php elseif ( is_category() ): ?>

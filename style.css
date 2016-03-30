@@ -59,26 +59,26 @@ Version: 1.0
 	}
 	
 #header h1 {
-	float: left;
 	margin: 30px 0 0 0;
-	width: 70%;
-	}
+	width: 100%;
+}
 
 #header h2 {
-	float: left;
+	width: 100%;
 	color: #444;
 	font-size: 23px;
 	font-weight: 400;
 	line-height: 33px;
 	margin: 10px 0 0 0;
-	width: 70%;
-	}
+}
 	
-	body {
+body {
 	font-family: Helvetica, Arial, sans-serif;
-	}
-	
-	
+}
+.container {
+	padding-bottom: 40px;
+}
+
 /* TALKS Archive */
 
 .category-talks .post {
@@ -164,6 +164,10 @@ Version: 1.0
 
 /* Portfolio Single */
 
+#content {
+	margin-bottom: 40px;
+}
+
 body.single-talks #content article {
 	margin-bottom: 0;
 	}
@@ -191,7 +195,7 @@ body.single-talks .entry-image {
 body.single-talks .whiteboard {
 	background: #FFFFFF;
 	padding: 55px 40px 40px 40px;
-	}
+}
 
 body.single-talks .portfolio-meta {
 	float: left;
@@ -270,6 +274,30 @@ h1,h2{ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;}
 		width: calc(100% - 350px);
 		float: right;
 	}
+}
+#content .author-bio {
+	margin-bottom: 0;
+}
+
+/* Event gallery */
+.galleria:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.gallery__thumb {
+	float: left;
+	display: block;
+	width: 30%;
+	height: 0;
+	padding-top: 30%;
+	background-size: cover;
+	background-position: center;
+	margin: 0 5% 5% 0;
+	cursor: pointer;
+}
+.gallery__thumb:nth-child(3n) {
+	margin-right: -4px;
 }
 
 
